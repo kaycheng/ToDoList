@@ -1,0 +1,42 @@
+<h1 class="center">Welcome to ToDoList</h1>
+<hr>
+<h3 class="center">In ToDoList, you can add lists on your board.<br /> Let you know your plan's detail.</h3>
+
+<div class="form contrainer">
+  <div class="center">
+    <button type="button" class="btn btn-warning new_btn">
+      <%= link_to "New List", new_list_path %>
+    </button>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <ul>
+
+        <% @lists.each do |list| %>
+          <li class="well">
+            <%= link_to list.name.capitalize, list_path(list) %>
+            <div class="pull-right">
+              <%= list.duedate %>
+            </div>
+            <hr>
+            <%= link_to list.note.capitalize, list_path(list) %>
+            <hr>
+            <button type="button" class="btn btn-success">
+              <%= link_to 'Edit',edit_list_path(list)%>
+            </button>
+            <button type="button" class="btn btn-info">
+              <%= link_to 'Show', list_path(list) %>
+            </button>
+            <button type="button" class="btn btn-danger">
+              <%= link_to 'Delete', list_path(list), method: :delete, 
+                                                     data: {confirm: "Are you sure?"} %>
+            </button>
+          </li>
+        <% end %>
+
+      </ul>
+    </div>
+  </div>
+
+  
+</div>
