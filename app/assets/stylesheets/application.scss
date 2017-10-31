@@ -43,4 +43,22 @@ ul {
   list-style: none;
 }
 
+.navbar {
+  max-width: 100%;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2em;
+  padding-left: 40px;
+}
+
+.navbar-nav {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: -1px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 
