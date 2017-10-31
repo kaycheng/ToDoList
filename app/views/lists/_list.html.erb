@@ -1,0 +1,28 @@
+<% obj.each do |list| %>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="well">
+        <div class="list-title col-md-3">
+          <%= link_to list.name.capitalize, list_path(list) %>
+        </div>
+        <div class="list-duedate pull-right col-md-3">
+          <%= list.duedate %>
+        </div>
+        <hr>
+        <div class="list-note">
+          <%= link_to list.note.capitalize, list_path(list) %>
+        </div>
+        <hr>
+        <div class="list-action">
+          <button type="button" class="btn btn-success">
+            <%= link_to 'Edit',edit_list_path(list)%>
+          </button>
+          <button type="button" class="btn btn-warning">
+            <%= link_to 'Delete', list_path(list), method: :delete, 
+                                                   data: {confirm: "Are you sure?"} %>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -23,16 +23,24 @@
   margin: 20px;
 }
 
-li {
-  list-style: none;
-}
-
 button a {
   color: #fff;
 }
 
 button a:hover {
   text-decoration: none;
+}
+
+.list-title a, .list-note a {
+  text-decoration: none;
+}
+
+.list-title {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
 }
 
 
