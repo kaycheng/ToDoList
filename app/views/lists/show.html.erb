@@ -13,6 +13,12 @@
       <div class="list-note">
         <%= simple_format(@list.note) %>
       </div>
+      <div class="todo_items_wrapper">
+        <%= render @list.todo_items %>
+        <div class="form" %>
+          <%= render 'todo_items/item_form' %>
+        </div>
+      </div>
       <hr>
       <div class="list-action">
           <button type="button" class="btn btn-success">

@@ -1,0 +1,5 @@
+<%= form_for([@list, @list.todo_items.build]) do |f| %>
+  <%= f.text_field :content, placeholder: "New Item", autofocus: true %>
+  <%= f.submit %>
+ 
+<% end %>
