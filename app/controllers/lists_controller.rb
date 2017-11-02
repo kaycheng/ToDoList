@@ -15,7 +15,7 @@ class ListsController < ApplicationController
 
   def update
     if @list.update(list_params)
-      redirect_to lists_path(@list)
+      redirect_to list_path(@list)
     else
       render 'edit'
     end
@@ -35,17 +35,18 @@ class ListsController < ApplicationController
 
   def destroy
     @list.destroy
-      
-    redirect_to lists_path
+
+    redirect_to root_path
   end
 
   private
+
+  def set_list
+    @list = List.find(params[:id])
+  end
 
   def list_params
     params.require(:list).permit(:name, :duedate, :note)
   end
 
-  def set_list
-    @list = List.find(params[:id])
-  end
 end

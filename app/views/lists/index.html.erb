@@ -1,14 +1,8 @@
-<h1 class="center">Welcome to ToDoList</h1>
-<hr>
-<h3 class="center">In ToDoList, you can add lists on your board.<br /> Let you know your plan's detail.</h3>
+<div class="container">
+  <h1 class="center">Welcome to ToDoList</h1>
+  <h3 class="center">In ToDoList, you can add lists on your board.<br /> Provide you details of your plan.</h3>
 
-
-<div class="center">
-  <button type="button" class="btn btn-success new_btn">
-    <%= link_to "New List", new_list_path %>
-  </button>
+  <%= render 'list' %>
 </div>
-
-<%= render 'list', obj: @lists %>
 
 

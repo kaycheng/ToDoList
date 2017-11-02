@@ -23,6 +23,11 @@
   margin: 20px;
 }
 
+hr {
+  border: 1px solid #484848;
+  margin: 5px 0;
+}
+
 button a {
   color: #fff;
 }
@@ -31,17 +36,63 @@ button a:hover {
   text-decoration: none;
 }
 
+.sh-well {
+  margin-top: 7%;
+}
+
 .list-title a, .list-note a {
   text-decoration: none;
 }
 
 .list-title {
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-align: center;
+  margin: 7px;
+}
+
+.list-note {
+  font-weight: 400;
+  font-size: 1.3em;
+  text-align: center;
+  margin: 7px;
 }
 
 ul {
   list-style: none;
 }
+
+.links {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.list-action,
+.list-duadate {
+  display: inline-block;
+}
+
+.list-action {
+  margin-left: 35%;
+}
+
+.date-action {
+  margin-top: 5%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-duadate {
+  padding-top: 5%;
+}
+
+.todo_items_wrapper {
+  text-align: center;
+}
+
+/* ##### Navbar ##### */
 
 .navbar {
   max-width: 100%;
@@ -60,5 +111,75 @@ ul {
   padding-left: 40px;
   padding-right: 40px;
 }
+
+/* #### todo_item #### */
+.clearfix:after {
+  clear: both;
+}
+
+.table {
+  display: block;
+}
+
+.complete {
+  float: left;
+  display: inline-block;
+  text-align: center;
+
+  
+}
+
+.todo_item {
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.trash {
+  float: right;
+  display: inline-block;
+  text-align: center;
+}
+
+/* #### list_form #### */
+h1 {
+  margin: 20px;
+}
+
+.form-horizontal {
+  margin: 30px;
+}
+
+
+/* #### item_form #### */
+.item-input,
+.item-btn {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.item-btn {
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
